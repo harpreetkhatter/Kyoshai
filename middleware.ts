@@ -7,6 +7,7 @@ const isProtectedRoute = createRouteMatcher([
     "/ai-cover-letter(.*)",
     "/interview(.*)",
     "/onboarding(.*)",
+    
 ])
 export default clerkMiddleware(async(auth,req)=>{
   const {userId} = await auth();
