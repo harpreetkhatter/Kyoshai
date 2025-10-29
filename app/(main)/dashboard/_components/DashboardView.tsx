@@ -61,7 +61,7 @@ const DashboardView = ({ insights }: DashboardViewProps) => {
     }
     const OutlookIcon = getMarketOutlookInfo(insights.marketOutlook).icon
     const OutlookColor = getMarketOutlookInfo(insights.marketOutlook).color
-    const lastUpdateDate = format(new Date(insights.lastUpdated), "dd/mm/yyyy")
+    const lastUpdateDate = format(new Date(insights.lastUpdated), "dd/MM/yyyy")
     const nextUpdateDistance = formatDistanceToNow(
         new Date(insights.nextUpdate),
         { addSuffix: true }
